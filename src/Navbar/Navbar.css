@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro&family=Jolly+Lodger&display=swap');
+
+/* Entire navbar background */
+nav {
+    padding: 0.75rem 1.5rem;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E4EDFF;
+    z-index: 1000;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* Logo styling */
+.nav__logo {
+    font-family: 'Jaro', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #505261;
+    cursor: pointer;
+}
+
+
+/* Navigation links */
+.nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.link a {
+    padding: 0 1rem;
+    color: #505261;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.link a:hover {
+    color: #FF7B5F;
+}
+
+/* Sign Up & Login Buttons */
+.btn1, .btn2 {
+    border: none;
+    background-color: #FF7B5F;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    
+    
+}
+
+.btn1:hover, .btn2:hover {
+    background-color: #e7664c;
+}
+
+/* Mobile Responsive */
+.nav__icon {
+    display: none;
+}
+.logo-stay {
+    font-family: 'Jaro', sans-serif;
+    color: #505261;
+}
+
+.logo-h {
+    font-family: 'Jolly Lodger', cursive;
+    color: #FF7B5F;
+}
+.nav__logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .nav__icon {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .nav__links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #E4EDFF;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .nav__links.active {
+        display: flex;
+    }
+    .nav__logo a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    
+
+    
+}

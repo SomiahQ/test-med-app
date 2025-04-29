@@ -1,0 +1,101 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #e6edfc;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 420px;
+  margin: 5% auto;
+  padding: 0 20px;
+}
+
+.login {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login h1 {
+  color: #03014D;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-text1 {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.login-text1 span {
+  color: #FF7B5F;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-text1 a {
+  color: #FF7B5F;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #03014D;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.btn-group {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px 0;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.btn-primary {
+  background-color: #FF7B5F;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #464553;
+  color: #fff;
+}
+
+.login-text {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin-top: 15px;
+}
