@@ -1,8 +1,6 @@
 * {
     margin: 0;
-    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
-    background-color: #e6edfc;
     
 }
 .hero-section {
@@ -26,6 +24,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+
 }
 .hero-section h4 {
     font-size: 22px;
@@ -33,6 +32,7 @@
     text-align: center;
     padding: 12px 14rem;
     color:#969BA5;
+
 }
 
 .hero-section .button {
@@ -147,6 +147,8 @@ li {
     align-items: center;
     position: static;
     margin: 10px;
+    font-family: "Poppins", sans-serif;
+
 }
 
 

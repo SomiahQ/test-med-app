@@ -99,3 +99,17 @@ body {
   color: #666;
   margin-top: 15px;
 }
+/* Forgot password */
+.login-text {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin-top: 15px;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+}

@@ -19,7 +19,7 @@ function Navbar() {
 
         {/* Navigation Links */}
         <ul className="nav__links active">
-          <li className="link"><a href="/home">Home</a></li>
+          <li className="link"><a href="/">Home</a></li>
           <li className="link"><a href="#">Appointments</a></li>
           <li className="link"><a href="#">Health Blog</a></li>
           <li className="link"><a href="#">Reviews</a></li>
