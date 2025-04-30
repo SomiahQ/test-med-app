@@ -10,6 +10,7 @@ import Sign_Up from './Components/Sign_Up/Sign_Up';
 import Login from './Components/Login/Login';
 import InstantConsultation from './Components/InstantConsultation/InstantConsultation';
 import Notification from './Components/Notification/Notification'; // ✅ Import Notification
+import ReviewForm from './Components/ReviewForm/ReviewForm'; // Import ReviewForm
 
 function App() {
   return (
@@ -22,7 +23,10 @@ function App() {
           <Route path="/Login" element={<Login />} />
          <Route path="/instant-consultation" element={<InstantConsultation />} />
           <Route path="/notification" element={<Notification />} /> {/* ✅ Notification route */}
-
+          <Route
+            path="/review"
+            element={<ReviewForm doctorName="Dr. Smith" appointmentDate="2025-04-30" onSubmitFeedback={(data) => console.log(data)} />}
+          />
         </Routes>
       </BrowserRouter>
     </div>

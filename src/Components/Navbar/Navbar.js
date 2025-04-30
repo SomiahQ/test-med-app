@@ -27,8 +27,10 @@ function Navbar() {
             <Link to="/instant-consultation">Instant Consultation</Link>
           </li>
           </li>
-          <li className="link"><a href="#">Reviews</a></li>
-          <li className="link">
+        <li className="link">
+          <Link to="/review">Review</Link> {/* Link to review section */}
+        </li>
+            <li className="link">
             <a href="/signup">
               <button className="btn1">Sign up</button>
             </a>
