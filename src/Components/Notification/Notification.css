@@ -1,0 +1,38 @@
+.appointment-card {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background-color: #fefefe;
+  padding: 16px 24px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  width: 280px;
+}
+
+.appointment-card__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.appointment-card__content p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.cancel-btn {
+  margin-top: 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cancel-btn:hover {
+  background-color: #c0392b;
+}
