@@ -29,7 +29,7 @@ function Navbar() {
             </a>
           </li>
           <li className="link">
-            <a href="/login">
+            <a href="/Login">
               <button className="btn1">Login</button>
             </a>
           </li>
