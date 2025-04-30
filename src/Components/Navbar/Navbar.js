@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css'; // make sure your styles are linked correctly
 import { Link } from 'react-router-dom';
 
 function Navbar() {
+  const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
+
+  const toggleProfileDropdown = () => {
+    setIsProfileDropdownOpen(prevState => !prevState);
+  };
+
   return (
     <div>
       <nav>
@@ -23,14 +29,12 @@ function Navbar() {
           <li className="link"><a href="/">Home</a></li>
           <li className="link"><a href="#">Appointments</a></li>
           <li className="link">
-          <li className="link">
             <Link to="/instant-consultation">Instant Consultation</Link>
           </li>
+          <li className="link">
+            <Link to="/review">Review</Link> {/* Link to review section */}
           </li>
-        <li className="link">
-          <Link to="/review">Review</Link> {/* Link to review section */}
-        </li>
-            <li className="link">
+          <li className="link">
             <a href="/signup">
               <button className="btn1">Sign up</button>
             </a>
@@ -39,6 +43,17 @@ function Navbar() {
             <a href="/Login">
               <button className="btn1">Login</button>
             </a>
+          </li>
+          
+          {/* Profile Dropdown */}
+          <li className="link" onClick={toggleProfileDropdown}>
+            <button className="btn1">Profile</button>
+            {isProfileDropdownOpen && (
+              <div className="profile-dropdown">
+                <Link to="/profile">View Profile</Link>
+                <Link to="/logout">Logout</Link>
+              </div>
+            )}
           </li>
         </ul>
       </nav>

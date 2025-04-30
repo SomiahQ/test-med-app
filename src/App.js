@@ -11,6 +11,7 @@ import Login from './Components/Login/Login';
 import InstantConsultation from './Components/InstantConsultation/InstantConsultation';
 import Notification from './Components/Notification/Notification'; // ✅ Import Notification
 import ReviewForm from './Components/ReviewForm/ReviewForm'; // Import ReviewForm
+import ProfileCard from './Components/ProfileCard/ProfileCard';
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
             path="/review"
             element={<ReviewForm doctorName="Dr. Smith" appointmentDate="2025-04-30" onSubmitFeedback={(data) => console.log(data)} />}
           />
+          <Route path="/profile" element={<ProfileCard />} />
+
         </Routes>
       </BrowserRouter>
     </div>
