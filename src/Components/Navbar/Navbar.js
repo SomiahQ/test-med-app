@@ -45,7 +45,7 @@ function Navbar() {
             </a>
           </li>
           
-          {/* Profile Dropdown */}
+          {/* Profile Dropdown 
           <li className="link" onClick={toggleProfileDropdown}>
             <button className="btn1">Profile</button>
             {isProfileDropdownOpen && (
@@ -54,7 +54,7 @@ function Navbar() {
                 <Link to="/logout">Logout</Link>
               </div>
             )}
-          </li>
+          </li>*/}
         </ul>
       </nav>
     </div>
